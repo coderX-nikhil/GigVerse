@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./public/images/man-1459246_640.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <title>GiGVERSE: Your Gateway to the Freelance Universe</title>
+    <style>
+      /* Full-screen video background */
+      .video-background {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        object-fit: cover; /* Ensure the video covers the entire screen */
+      }
+
+      #root {
+        position: relative;
+        z-index: 1; /* Ensure content is above the video */
+        color: white; /* Change text color to make it visible over the video */
+        text-align: center; /* Center text */
+      }
+    </style>
+  </head>
+  <body>
+    <video class="video-background" autoPlay loop muted playsinline>
+      <source src="./No Copyright Abstract Topographic Texture Motion Background Stock Footage.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+
+    <div id="root">
+      <h1>Welcome to GiGVERSE</h1>
+      <p>Your Gateway to the Freelance Universe</p>
+      <!-- Your existing content will be rendered here -->
+    </div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
