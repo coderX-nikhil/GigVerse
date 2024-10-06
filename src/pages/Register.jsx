@@ -63,7 +63,7 @@ const Register = () => {
             type="text"
             placeholder="johndoe"
             onChange={handleChange}
-            className="p-4 border border-gray-300 rounded"
+            className="p-4 border text-black border-gray-300 rounded"
           />
           <label className="text-gray-500 text-lg">Email</label>
           <input
@@ -71,20 +71,20 @@ const Register = () => {
             type="email"
             placeholder="email"
             onChange={handleChange}
-            className="p-4 border border-gray-300 rounded"
+            className="p-4 border  text-black border-gray-300 rounded"
           />
-          <label className="text-gray-500 text-lg">Password</label>
+          <label className="text-gray-500  text-blacktext-lg">Password</label>
           <input
             name="password"
             type="password"
             onChange={handleChange}
-            className="p-4 border border-gray-300 rounded"
+            className="p-4 border  text-black border-gray-300 rounded"
           />
           <label className="text-gray-500 text-lg">Profile Picture</label>
           <input
             type="file"
             onChange={(e) => setFile(e.target.files[0])}
-            className="p-4 border border-gray-300 rounded"
+            className="p-4 border  text-black border-gray-300 rounded"
           />
           <label className="text-gray-500 text-lg">Country</label>
           <input
@@ -92,7 +92,7 @@ const Register = () => {
             type="text"
             placeholder="USA"
             onChange={handleChange}
-            className="p-4 border border-gray-300 rounded"
+            className="p-4 border  text-black border-gray-300 rounded"
           />
           <button
             type="submit"
@@ -118,13 +118,13 @@ const Register = () => {
               <span className="slider round"></span>
             </label>
           </div>
-          <label className="text-gray-500 text-lg">Phone Number</label>
+          <label className="text-gray-500 text text-lg">Phone Number</label>
           <input
             name="phone"
             type="text"
             placeholder="+1 234 567 89"
             onChange={handleChange}
-            className="p-4 border border-gray-300 rounded"
+            className="p-4 border text-black border-gray-300 rounded"
           />
           <label className="text-gray-500 text-lg">Description</label>
           <textarea
@@ -133,7 +133,7 @@ const Register = () => {
             cols="30"
             rows="10"
             onChange={handleChange}
-            className="p-4 border border-gray-300 rounded"
+            className="p-4 border text-black border-gray-300 rounded"
           ></textarea>
         </div>
       </form>

@@ -96,7 +96,7 @@ const Footer = () => {
                 </div>
             </div> */}
 
-            This is a footer section
+&copy;  GigVerse  2024 ✨
         </div>
     );
 }

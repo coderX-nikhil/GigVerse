@@ -60,6 +60,9 @@
 // }
 
 // export default Featured;
+
+
+
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -79,10 +82,17 @@ function Featured() {
       <div className="container w-full max-w-[1400px] flex flex-row items-center justify-between gap-8 z-10 relative p-6">
         {/* Left Half - Text and Logo */}
         <div className="left-half w-1/2 flex flex-col items-start justify-center gap-8 text-left">
-          <img src="/Logo1.png" alt="GiGVERSE Logo" className="w-[150px] h-auto shadow-lg transition-transform transform hover:scale-105" />
-          <p className="text-lg md:text-xl lg:text-2xl font-light max-w-[800px] animate-fadeInUp transition-all duration-700 ease-in-out shadow-md bg-black bg-opacity-30 p-4 rounded-lg">
-            GiGVERSE is your one-stop solution for discovering exceptional freelance talent. Simplify your business collaborations with professionals worldwide.
-          </p>
+          {/* <img src="/Logo1.png" alt="GiGVERSE Logo" className="w-[150px] h-auto shadow-lg transition-transform transform hover:scale-105" /> */}
+          {/* <p className="text-lg md:text-xl lg:text-2xl font-light max-w-[800px] animate-fadeInUp transition-all duration-700 ease-in-out shadow-md bg-black bg-opacity-30 p-4 rounded-lg">
+            <b>GigVerse</b> is your one-stop solution for discovering exceptional freelance talent. Simplify your business collaborations with professionals worldwide.
+          </p> */}
+
+<p className="text-lg md:text-xl lg:text-2xl font-light max-w-[800px] animate-fadeInUp transition-all duration-700 ease-in-out shadow-md bg-black bg-opacity-30 p-6 rounded-lg leading-relaxed">
+  <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#1dbf73] to-[#19a867] text-4xl animate-pulse">
+    GigVerse. 
+  </span>{" "}
+  is your one-stop solution for discovering exceptional freelance talent. Simplify your business collaborations with professionals worldwide.
+</p>
 
           <div className="search bg-white rounded-lg shadow-xl flex items-center justify-between w-full max-w-[700px] overflow-hidden border border-gray-400 transform transition-all duration-300 hover:shadow-2xl hover:scale-105">
             <div className="searchInput flex items-center gap-2 px-3 border-gray-400">
@@ -91,7 +101,7 @@ function Featured() {
                 type="text"
                 placeholder='Try "Find a web developer"'
                 onChange={(e) => setInput(e.target.value)}
-                className="border-none outline-none placeholder-gray-500 text-sm w-full rounded-lg p-2"
+                className="border-none outline-none text-black placeholder-gray-500 text-sm w-full rounded-lg p-2"
               />
             </div>
             <button
