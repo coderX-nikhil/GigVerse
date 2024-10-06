@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/man-1459246_640-B23jlBoB.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>GiGVERSE: Your Gateway to the Freelance Universe</title>
+    <style>
+      /* Full-screen video background */
+      .video-background {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1;
+        transform: translate(-50%, -50%);
+        -o-object-fit: cover;
+           object-fit: cover; 
+        filter: blur(5px); 
+      }
+
+      #root {
+        position: relative;
+        z-index: 1; 
+        color: white; /* Change text color to make it visible over the video */
+        text-align: center; /* Center text */
+      }
+
+      /* Optional: Add a backdrop-filter to add more visual clarity to the text */
+      body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.3); /* Optional semi-transparent layer */
+        z-index: 0; /* Ensure this layer stays below the content but above the video */
+      }
+    </style>
+    <script type="module" crossorigin src="/assets/index-Dhd6HOgE.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-Dt3HBZ19.css">
+  </head>
+  <body>
+    <video class="video-background" autoPlay loop muted playsinline>
+      <source src="/assets/No%20Copyright%20Abstract%20Topographic%20Texture%20Motion%20Background%20Stock%20Footage-xKbTbJZC.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+
+    <div id="root">
+      <h1>Welcome to GiGVERSE</h1>
+      <p>Your Gateway to the Freelance Universe</p>
+      <!-- Your existing content will be rendered here -->
+    </div>
+
+  </body>
+</html>
